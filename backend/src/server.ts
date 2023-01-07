@@ -10,7 +10,7 @@ const servidor = async () => {
 
     /* Fastify */
     const fastify = Fastify({ logger: true })
-    
+
     /* Cors */
     await fastify.register(cors, { origin: true })
 
@@ -26,6 +26,6 @@ const servidor = async () => {
     await fastify.listen({ port: 5000 })
 
 }
-  
+
 // Inicia o fastify
 servidor()
