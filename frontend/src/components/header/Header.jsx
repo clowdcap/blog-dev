@@ -1,27 +1,24 @@
 import React from 'react'
+import './header.scss'
 
-import { AiOutlineMenu } from 'react-icons/ai'
+
+import LogoTopo from '../logo/LogoTopo'
+import Mobile from '../mobile/Mobile'
+import Navegacao from '../navegacao/Navegacao'
+
+
 
 const Header = () => {
   return (
     <header className="topo">
-        <div className="container center">
-            <div className="logo" id='logo'>
-                blog do zé
-            </div>
-            <nav className="nav__topo">
-                <ul className="lista__topo">
-                  <li className="item__lista__topo">
-                    <p clpssName='link__lista__topo'>Home</p>
-                    <p clpssName='link__lista__topo'>Blog</p>
-                    <p clpssName='link__lista__topo'>Contato</p>
-                  </li>
-                </ul>
+        <div className="container__topo center">
 
-                <div className="mobile">
-                  <AiOutlineMenu />
-                </div>
-            </nav>
+            <LogoTopo titulo="blog do zé" />
+         
+            <Navegacao />
+
+            <Mobile />
+            
         </div>
     </header>
   )

@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
 @import './_global.scss';
 
+/* Imports Components */
+$lg: 1080px;
+$md: 865px;
+$sm: 650px;
+
 .App {
   background: var(--bg);
   display: flex;

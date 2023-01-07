@@ -1,0 +1,24 @@
+$lg: 1080px;
+$md: 865px;
+$sm: 650px;
+
+.mobile {
+    display: none;
+    font-size: var(--f_btn_mobile);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--destaque_hover);
+    }
+    &:active {
+        color: var(--destaque);
+    }
+}
+
+
+
+@media screen and (max-width: $sm) {
+    .mobile {
+        display: block !important;
+    }
+}

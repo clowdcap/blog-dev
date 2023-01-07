@@ -1,0 +1,43 @@
+$lg: 1080px;
+$md: 865px;
+$sm: 650px;
+
+.nav__topo {
+    position: relative;
+
+    .lista__topo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 3rem;
+
+        .item__lista__topo {
+            height: var(--header);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--hover);
+            
+            .link__lista__topo {
+                font-size: var(--f_texto);
+            }
+
+            &:hover {
+                border-bottom: var(--borda_hover);
+            }
+            
+            &:active {
+                border-bottom: var(--borda_active);
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $sm) {
+    .lista__topo {
+        display: none !important;
+    }
+}
