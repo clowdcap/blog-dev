@@ -13,7 +13,6 @@ const ArtigosHome = () => {
 
     const fetchPosts = async ()=> {
         const res = await axios.get('http://localhost:5000/posts')
-        console.log('Posts: ', res.data)
         setPosts(res.data)
     }
 
@@ -31,14 +30,16 @@ const ArtigosHome = () => {
                 </div>
 
                 <div className="cards">
-                    {posts.map((post) => (
-                        <Link to={'/posts/read/'+post.id}>
-                            <Card key={post.id}
-                                className="card__unique"
-                                tituloPost={post.titulo}
-                                imageUrl={post.capa}
-                            />
-                        </Link>
+                    {posts.map((post, index) => (
+                        <div key={index}>
+                            <Link to={'/posts/read/'+post.id}>
+                                <Card 
+                                    className="card__unique"
+                                    tituloPost={post.titulo}
+                                    imageUrl={post.capa}
+                                />
+                            </Link>
+                        </div>
                     ))}
                 </div>
 

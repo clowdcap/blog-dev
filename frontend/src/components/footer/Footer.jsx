@@ -8,11 +8,11 @@ const Footer = () => {
 
   return (
     <footer className='rodape'>
-      <div className="faixa__texto__rodape">
-        {texto_rodape.map((item) => (
-          <p>{item}</p>
+      {/* <div className="faixa__texto__rodape">
+        {texto_rodape.map((item, index) => (
+          <p key={index}>{item}</p>
         ))}
-      </div>
+      </div> */}
       <div className="container__rodape center">
 
         <div className="logo">

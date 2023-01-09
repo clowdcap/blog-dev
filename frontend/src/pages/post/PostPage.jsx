@@ -15,11 +15,9 @@ const PostPage = () => {
   const id = path[3]
 
   const [post, setPost] = useState([])
-  console.log()
 
     const fetchPost = async ()=> {
         const res = await axios.get('http://localhost:5000/posts/read/'+id)
-        console.log('Posts: ', res.data)
         setPost(res.data)
     }
 
