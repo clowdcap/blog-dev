@@ -19,6 +19,8 @@ $sm: 650px;
 
 @media screen and (max-width: $sm) {
     .mobile {
-        display: block !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
     }
 }
