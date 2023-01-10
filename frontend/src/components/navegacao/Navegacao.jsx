@@ -12,8 +12,8 @@ const Navegacao = () => {
                     <li className="item__lista__topo">Home</li>
                 </NavLink >
 
-                <NavLink to="/" className='link__lista__topo'>
-                    <li className="item__lista__topo">Blog</li>
+                <NavLink to="/sobre" className='link__lista__topo'>
+                    <li className="item__lista__topo">Sobre</li>
                 </NavLink >
 
                 <NavLink to="/contato" className='link__lista__topo'>

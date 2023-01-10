@@ -1,4 +1,5 @@
-import React from 'react'
+
+import React, {useState} from 'react'
 import './header.scss'
 
 
@@ -9,6 +10,13 @@ import Navegacao from '../navegacao/Navegacao'
 
 
 const Header = () => {
+
+  const [showMenu, setShowMenu] = useState(false)
+
+  const ToggleMenu = () => {
+      setShowMenu(!showMenu)
+  }
+
   return (
     <header className="topo">
         <div className="container__topo center">
@@ -17,7 +25,7 @@ const Header = () => {
          
             <Navegacao />
 
-            <Mobile />
+            <Mobile onClick={ToggleMenu} />
             
         </div>
     </header>

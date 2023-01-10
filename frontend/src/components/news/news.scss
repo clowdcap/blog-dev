@@ -1,0 +1,83 @@
+$pageSize: 500px;
+
+.newsletter {
+    max-width: $pageSize;
+    width: 100%;
+    margin: 4rem;
+    border-top: 5px solid var(--borda_cor);
+
+    .container__news {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        border: var(--borda);
+        padding: 2.5rem 2rem;
+
+
+        .texto__news {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            h2 {
+                font-size: var(--f_news);
+                text-align: center;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: var(--f_texto);
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+
+        .form__news {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            input {
+                font-size: var(--f_texto);
+                padding: .5rem;
+                border: none;
+                outline: var(--borda);
+
+                &::placeholder {
+                    color: var(--texto_placeholder);
+                }
+
+                &:active {
+                    border: var();
+                }
+            }
+
+            button {
+                font-size: var(--f_btn);
+                color: var(--texto_btn);
+                background: var(--btn);
+                padding: .5rem 1rem;
+                text-transform: uppercase;
+                outline: var(--borda);
+                border: none;
+                transition: var(--hover);
+                font-weight: 700;
+
+                &:hover {
+                    background: var(--btn_hover);
+                    outline: 1px solid var(--btn_hover)
+                }
+
+                &:active {
+                    background: var(--destaque);
+                    outline: 1px solid var(--destaque_hover);
+                    color: var(--texto);
+                }
+            }
+        }
+    }
+}

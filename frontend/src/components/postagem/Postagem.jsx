@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Postagem = () => {
+import './postagem.scss'
+
+const Postagem = (props) => {
   return (
-    <div>Postagem</div>
+    <section className="conteudo__post">
+      <div className="container__post">
+        <div className="body__post">{props.conteudo}</div>
+
+      </div>
+    </section>
   )
 }
 

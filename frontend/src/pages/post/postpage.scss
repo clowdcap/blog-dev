@@ -1,4 +1,4 @@
-// PAREU AQUI
+$body: 800px;
 
 section.post__page {
     width: 100%;
@@ -11,37 +11,134 @@ section.post__page {
         .titulos__post {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
             h1 {
-                // PAREU AQUI
-                // PAREU AQUI
-                // PAREU AQUI
-                // PAREU AQUI
-                // PAREU AQUI
+            font-size: var(--f_capa);
             }
 
             p {
-
+                font-size: var(--f_texto);
             }
         }
 
         .img__capa__post {
+            width: $body;
             
             img {
-
+                width: 100%;
             }
        
         }
 
+        .hr {
+            margin: 1rem 0;
+            width: 56%;
+        }
+
         .conteudo__post {
+            max-width: $body;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             .legenda__topo__post {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between !important;
 
             }
 
             .corpo__post {
+                margin: 2rem 0;
+            }
 
+            .tags__post {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 1rem;
+                font-weight: 500;
+
+                p {
+                    font-size: var(--f_legenda);
+                    span {
+                        text-decoration: underline;
+                        font-size: var(--f_legenda);
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            .container__userProfile {
+                width: 100%;
+                margin-top: 2rem;
+            }
+
+            .outhers__posts {
+
+                max-width: $body;
+                width: 100%;
+                
+                .destaque__posts {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h2 {
+                        font-size: var(--f_destaque);
+                    }
+                }
+            }
+
+            .boxes__posts {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0 2%;
             }
         }
 
     }
 }
+
+$sm: 750px;
+@media screen and (max-width: $sm) {
+
+
+    .legenda__topo__post {
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 1rem;
+
+    }
+    .img__capa__post {
+        width: 95% !important;
+    }
+
+    .hr {
+        width: 75% !important;
+    }
+
+    .tags__post {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxes__posts { 
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .outhers__posts  {
+        width: 100%
+    }
+}
+
+

@@ -4,7 +4,7 @@ import './footer.scss'
 
 const Footer = () => {
 
-  const texto_rodape = ["Growth","Remote work","Strategy","Suspense","Creativity","UX design","Distributed teams","Digital product design<"]
+  // const texto_rodape = ["Growth","Remote work","Strategy","Suspense","Creativity","UX design","Distributed teams","Digital product design<"]
 
   return (
     <footer className='rodape'>

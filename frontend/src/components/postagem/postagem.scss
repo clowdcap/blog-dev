@@ -1,0 +1,16 @@
+section.conteudo__post {
+    width: 100%;
+
+    .container__post {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .body__post {
+            font-size: var(--f_texto);
+            color: var(--texto);
+            text-align: justify;
+            margin: 2rem 0 5rem 0;
+        }
+    }
+}

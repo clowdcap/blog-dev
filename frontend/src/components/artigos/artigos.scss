@@ -7,7 +7,6 @@ section.artigos {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         
         .destaque__artigos {
             display: flex;
@@ -23,20 +22,17 @@ section.artigos {
         .cards {
             margin: 2rem 0;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 1rem;
-            
-            
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0 3rem;
+           
             .card__unique {
-
                 width: 100%;
                 background-color: red;
             }
-
-
         }
     }
 }
+
 
 $sm: 650px;
 @media screen and (max-width: $sm) {
