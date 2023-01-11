@@ -1,9 +1,8 @@
-$pageSize: 500px;
+
 
 .newsletter {
-    max-width: $pageSize;
-    width: 100%;
-    margin: 4rem;
+    width: 75%;
+    margin: 4rem auto;
     border-top: 5px solid var(--borda_cor);
 
     .container__news {
@@ -80,4 +79,17 @@ $pageSize: 500px;
             }
         }
     }
+}
+
+$sm: 600px;
+@media screen and (max-width: $sm) {
+    .form__news {
+        flex-direction: column !important;
+        gap: 2rem;
+
+        button {
+            width: 75%;
+        }
+    }
+    
 }
