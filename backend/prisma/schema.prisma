@@ -23,3 +23,16 @@ model Post {
   autor     String
   createdAt DateTime @default(now())
 }
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  name      String?
+  sobrenome String?
+  email     String   @unique
+  telefone  String?
+  passwords String
+  avatar    String?
+  descricao String
+  createdAt DateTime @default(now())
+}
