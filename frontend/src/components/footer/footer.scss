@@ -1,0 +1,103 @@
+footer.rodape {
+    width: 100%;
+    background: var(--footer);
+    color: var(--texto_footer);
+
+    .faixa__texto__rodape {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: row !important;
+        width: 100%;
+        gap: 2rem;
+        margin: 1rem 0;
+        justify-content: center;
+        align-items: center;
+        
+        p {
+            
+            font-size: var(----f_texto);
+            font-weight: 300;
+        }
+
+        span {
+            font-size: var(----f_texto);
+            font-weight: 700 !important;
+        }
+    }
+
+    .container__rodape {
+        max-width: 800px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .textos__rodape {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            p {
+                font-size: var(--f_rodape);
+            }
+        }
+
+        .links__social {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            gap: 3rem;
+            margin: 2rem 0;
+
+            p {
+                font-weight: 700;
+                font-size: var(--f_rodape);
+                text-decoration: underline;
+            }
+        }
+
+        .copyright__rodape {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+
+            p {
+                font-size: var(--f_copyright);
+            }
+        }
+
+    }
+}
+
+$md: 1091px;
+$sm: 650px;
+
+@media screen and (max-width: $md) {
+    .faixa__texto__rodape {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: $sm) {
+
+    
+
+    .container__rodape {
+        margin: 2rem !important;
+
+        
+
+        .links__social {
+            margin: 1rem !important;
+            flex-direction: column !important;
+
+            p {
+                font-size: 1.3rem !important;
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
     "dev": "tsx watch src/server.ts"
   },
@@ -20,6 +20,7 @@
     "@fastify/cors": "^8.2.0",
     "@prisma/client": "^4.8.1",
     "fastify": "^4.11.0",
+    "react-router-dom": "^6.6.2",
     "zod": "^3.20.2"
   }
 }

@@ -1,0 +1,44 @@
+$card: 300px;
+
+.card__post {
+    width: 100%;
+    margin: 2rem 0;
+
+    .container__post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .img__card__post {
+            flex: 1;
+            width: $card !important;
+            height: $card !important;
+            
+            img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover;
+                box-shadow: 0px 3px 10px var(--sombra);
+            }
+        }
+
+        .title__card__post {
+            flex: 1;
+
+            h3 {
+                font-size: var(--f_titulo);
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    }
+}
+
+$sm: 650px;
+@media screen and (max-width: $sm) {
+    .img__card__post {        
+        width: 100% !important;
+    }
+}

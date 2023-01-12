@@ -1,0 +1,17 @@
+$lg: 1080px;
+$md: 865px;
+$sm: 650px;
+
+.logo__topo, .logo__rodape {
+    font-size: var(--f_logo);
+    text-transform: uppercase;
+    height: var(--header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.logo__rodape {
+    color: var(--texto_footer);
+}

@@ -5,6 +5,7 @@ CREATE TABLE "Post" (
     "descricao" TEXT NOT NULL,
     "conteudo" TEXT NOT NULL,
     "capa" TEXT NOT NULL,
+    "autor" TEXT NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 

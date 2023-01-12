@@ -1,0 +1,107 @@
+$lg: 1080px;
+$md: 865px;
+$sm: 650px;
+
+:root {
+    --texto_btn: #f2f2f2;
+    --texto_footer: #fff;
+    --texto: #333;
+    --texto_placeholder: #777;
+    --titulo: #111;
+
+    --bg: #fff;
+    --box: #f2f2f2;
+    --card: #ccc;
+    --footer: #333;
+    --sep: #ccc;
+
+    --destaque: #FFD900;
+    --destaque_hover: #907a00;
+    
+    --btn: #333;
+    --btn_hover: #777;
+    --sombra: #eee;
+    
+    --borda: 1px solid var(--borda_cor);
+    --borda_share: 1px solid var(--card);
+    --borda_hover: 3px solid var(--borda_cor);
+    --borda_active: 3px solid var(--destaque);
+    --borda_cor: #333;
+    --borda_rad: 15px;
+    --borda_rounded: 5px;
+    
+    --hover: all .1s ease-in-out;
+
+    --f_capa: 54px;
+    --f_titulo: 22px;
+    --f_news: 36px;
+    --f_destaque: 44px;
+    --f_texto: 20px;
+    --f_logo: 35px;
+    --f_legenda: 18px;
+    --f_btn_mobile: 35px;
+    --f_btn: 20px;
+
+    --header: 125px;
+}
+
+@media screen and (max-width: $md) {
+    :root {
+        --f_capa: 48px;
+        --f_titulo: 22px;
+        --f_destaque: 38px;
+        --f_texto: 20px;
+        --f_logo: 32px;
+        --f_news: 30px;
+        --header: 100px;
+        --borda_rad: 10px;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    :root {
+        --f_capa: 36px;
+        --f_destaque: 32px;
+        --f_texto: 16px;
+        --f_logo: 30px;
+        --f_news: 28px;
+        --borda_rad: 5px;
+        --header: 85px;
+    }
+}
+
+* {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--texto);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a, p, span, li, div {
+    color: inherit;
+    text-decoration: none;
+    font-size: var(--f_texto);
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.center {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+img {
+    border-radius: var(--borda_rounded);
+}
+

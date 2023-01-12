@@ -37,18 +37,18 @@ export async function postsRouter(fastify: FastifyInstance) {
             data: input
         })
       
-        return reply.status(201).send("Post criado com sucesso!")
+        return reply.status(201).send("Post Criado com sucesso!")
 
     })
             
     /* Pega um Post */ // OK
-    await fastify.get('/posts/post/:id', async (request, reply) => {
+    await fastify.get('/posts/read/:id', async (request, reply) => {
 
         const readPostInput = z.object({
             id: z.string().nonempty(),
         })
     
-        async function readPost(input: any) {
+        const readPost = async (input: any) => {
 
             readPostInput.parse(input)
             
@@ -126,7 +126,7 @@ export async function postsRouter(fastify: FastifyInstance) {
 
         const post = await deletePost(request.params)
 
-        return reply.send("Post Editado com sucesso!")
+        return reply.send("Post Deletado com sucesso!")
         
 
     })
