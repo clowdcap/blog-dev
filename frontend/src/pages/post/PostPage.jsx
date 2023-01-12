@@ -28,12 +28,8 @@ const PostPage = () => {
   }
 
   useEffect(()=> {
-    try {
       fetchPost()
-    } catch (error) {
-      console.log(error)
-    }
-  }, [post])
+  }, [])
 
   return (
     <section className="post__page">

@@ -16,7 +16,7 @@ const ArtiogsSimple = () => {
 
   useEffect(()=> {
     try {
-      fetchPosts()()
+      fetchPosts()
     } catch (error) {
       console.log(error)
     }
