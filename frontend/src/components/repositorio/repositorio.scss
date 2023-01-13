@@ -1,0 +1,150 @@
+section.repositorio {
+    width: 100%;
+    
+    .container__repositorio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .titulo__repositorio {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 2rem 0;
+            
+            h1 {
+                font-size: var(--f_destaque);
+                font-weight: 700;
+            }
+
+            h3 {
+                font-size: var(--f_titulo);
+                font-weight: 500;
+            }
+        }
+
+        .menu__repositorio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            #tecnologia,
+            .botao {
+                width: 100%;
+                padding: .3rem;
+                font-weight: 500;
+                font-size: var(--f_texto);
+                border-radius: var(--borda_rounded);
+            }
+
+            #tecnologia {
+                border: none;
+                outline: var(--borda);
+            }
+
+            .botao {
+                background: var(--btn);
+                border: none;
+                outline: var(--borda);
+                color: var(--texto_btn);
+                transition: var(--hover);
+
+                &:hover {
+                    background: var(--btn_hover);
+                    box-shadow: 0px 0px 40px var(--sombra);
+                }
+                &:active {
+                    background: var(--destaque);
+                    color: var(--texto);
+                    box-shadow: 0px 0px 60px var(--sombra);
+                }
+            }
+        }
+
+        .sep {
+            width: 50%;
+            margin: 2rem 0 4rem 0;
+
+            hr {
+            }
+        }
+
+        .lista__repositorio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 5rem;
+
+            .item__repositorio {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                outline: var(--borda);
+                border-radius: var(--borda_rounded);
+                padding: 2rem .5rem;
+                max-width: 400px;
+                transition: var(--hover);
+
+                &:hover {
+                    transform: scale(1.1);
+                    outline: 2px solid var(--destaque);
+                    box-shadow: 0px 0px 40px var(--sombra);
+
+                    h4 {
+                        color: var(--destaque);
+                    }
+                }
+
+                h2 {
+                    font-size: var(--f_titulo);
+                }
+                h4 {
+                    font-size: var(--f_titulo);
+                    margin: 0.5rem 0;
+
+                    
+                }
+                a {
+                    
+                    font-size: var(--f_texto);
+                    &:hover {
+                        color: var(--destaque);
+                        cursor: pointer;
+
+                    }
+                }
+
+                p {
+                    font-size: var(--f_legenda);
+                    text-align: center;
+                    width: 90%;
+                    margin: 20px auto 0 auto;
+                    
+                }
+
+                
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    .lista__repositorio {
+        grid-template-columns: repeat(2, 1fr) !important;
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .lista__repositorio {
+        grid-template-columns: 1fr !important;
+        margin: 0 0.5rem;
+    }
+
+}
