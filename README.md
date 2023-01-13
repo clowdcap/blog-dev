@@ -4,8 +4,14 @@ Anotações das atualizações pendentes
 
 Front End
     - Desenvolver as Pages:
-        - Contato
         - Sobre
+            X About
+            X Tecnologias
+            - Servicos
+            - Fotos
+        - Contato
+        - Login / Register
+
 
     - Criar Pagina com Formulário para: 
         - Create Post
