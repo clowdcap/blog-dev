@@ -106,9 +106,27 @@ section.tecnologias {
 @media screen and (max-width: 775px) {
     .boxes__tecnologias {
         grid-template-columns: 1fr !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .boxes__tecnologias {
 
         .box__tech {
-            width: 100% !important;
+
+            &:hover {
+                transform: scale(1.05) !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 370px) {
+    .boxes__tecnologias {
+
+        .box__tech {
+            padding: 1rem !important;
+            &:hover {
+                transform: scale(1) !important;
+            }
         }
     }
 }
