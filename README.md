@@ -9,12 +9,15 @@ Front End
             X Tecnologias
             X Projetos Git
             - Fotos
-        - Contato
+        X Contato
         - Login / Register
         - Atualizar Header
+    
     - Arrumar:
         - Menu Mobile
         - Links Rodape
+        - Sincronizar Api Newsletter
+        - Sincronizar Api Contato
         
         Diversos:
             - Foto capa do blog e dos post unico alinhado com all posts
@@ -44,6 +47,8 @@ Back End
     X Testar Rotas Usuarios
     - Criar Tabela NewsLetter
     - Testar Rotas News
+    - Criar Tabela Contato
+    - Testar Rotas Contato
 
     - Criar Tabela Categoria
     
