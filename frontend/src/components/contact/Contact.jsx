@@ -43,6 +43,7 @@ const Contact = () => {
     return (
         <section className="contact">
             <div className="container__contact center">
+ 
                 <div className="text__contact">
                     <h1>Contato</h1>
                     <ul className='list__contact'>
@@ -73,6 +74,7 @@ const Contact = () => {
                         
                     </ul>
                 </div>
+
                 <div className="form__contact">
                     <div className="titulo__form">
                         <h1>Entre em contato comigo</h1>

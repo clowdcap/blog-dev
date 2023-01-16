@@ -19,8 +19,12 @@ const Navegacao = () => {
                 <NavLink to="/contato" className='link__lista__topo'>
                     <li className="item__lista__topo">Contato</li>
                 </NavLink >
+
+
                 
             </ul>
+
+            
         </nav>
     )
 }

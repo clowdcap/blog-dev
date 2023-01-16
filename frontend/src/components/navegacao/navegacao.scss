@@ -4,6 +4,10 @@ $sm: 650px;
 
 .nav__topo {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
 
     .lista__topo {
         display: flex;
@@ -11,6 +15,20 @@ $sm: 650px;
         align-items: center;
         justify-content: flex-end;
         gap: 3rem;
+
+        
+        .lista__auth {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 3rem;
+            background: var(--destaque) !important;
+            color: var(--f_texto) !important;
+            height: 100%;
+            padding: 0 5%;
+    
+        }
 
         .item__lista__topo {
             height: var(--header);

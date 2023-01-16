@@ -27,12 +27,12 @@ model Post {
 model User {
   id        String   @id @default(cuid())
   username  String   @unique
-  name      String?
-  sobrenome String?
+  name      String   @default("Nome")
+  sobrenome String   @default("Sobrenome")
   email     String   @unique
-  telefone  String?
+  telefone  String   @default("Telefone")
   passwords String
-  avatar    String?
-  descricao String
+  avatar    String   @default("Image")
+  descricao String   @default("Texto")
   createdAt DateTime @default(now())
 }

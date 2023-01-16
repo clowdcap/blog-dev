@@ -10,7 +10,7 @@ Front End
             X Projetos Git
             - Fotos
         X Contato
-        - Login / Register
+        X Login / Register
         - Atualizar Header
     
     - Arrumar:

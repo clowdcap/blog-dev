@@ -1,15 +1,18 @@
-section.login {
-    margin: 5rem 0;
+section.admin {
+    padding: 5rem 0;
     width: 100%;
+    background: var(--footer);
 
-    .container__login {
+    .container__admin {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         border: var(--borda);
         width: max-content;
-        padding: 5%;
+        padding: 3rem 5%;
+        background: var(--bg);
+        border-radius: var(--borda_rounded);
 
 
         h1 {
@@ -23,7 +26,74 @@ section.login {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 1rem;
+
+            input {
+                padding: 5%;
+                font-size: var(--texto);
+                border: none;
+                outline: var(--borda);
+                text-align: center;
+                border-radius: var(--borda_rounded);
+
+                &:hover {
+                    outline: 1px solid var(--destaque);
+                }
+                &:active {
+                    outline: 3px solid var(--destaque);
+                }
+            }
+            
+            .remember__box {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: .5rem;
+            }
+            
+            .button_admin {
+                width: 80%;
+                padding: 5%;
+                font-size: var(--texto);
+                color: var(--texto_btn);
+                background: var(--btn);
+                margin-top: 1rem;
+                border-radius: var(--borda_rounded);
+                border: none;
+                transition: var(--hover);
+
+                &:hover {
+                    outline: 1px solid var(--destaque);
+                }
+
+                &:active {
+                    outline: none !important;
+                    color: var(--f_texto);
+                    background: var(--destaque);
+                }
+
+                &:disabled {
+                    background: var(--card) !important;
+                    outline: none !important;
+                    color: var(--texto_btn);
+                }
+
+                
+            }
         }
     }
 }
 
+@media screen and (max-width: 600px) {
+    .container__login {
+        padding: 10% !important;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .container__login {
+        width: 100vw !important;
+    }
+}

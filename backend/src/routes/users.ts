@@ -36,11 +36,15 @@ export async function usersRouter(fastify: FastifyInstance) {
     
         const input = createUsersBody.parse(request.body)
         
-        await prisma.user.create({
-            data: input
-        })
-
-        return reply.status(201).send("Usuario Criado com sucesso!")
+        try {
+            await prisma.user.create({
+                data: input
+            })
+    
+            return reply.status(201).send("Usuario Criado com sucesso!")
+        } catch (error) {
+            console.log(error)
+        }
 
     })
             
