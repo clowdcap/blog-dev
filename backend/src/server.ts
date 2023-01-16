@@ -4,6 +4,8 @@ import cors from "@fastify/cors"
 /* Rotas */
 import { postsRouter } from "./routes/posts"
 import { usersRouter } from "./routes/users"
+import { newsRouter } from "./routes/news"
+import { contatoRouter } from "./routes/contato"
 
 
 /* Funções */
@@ -17,12 +19,14 @@ const servidor = async () => {
 
     /* Rotas */
     fastify.get('/', async () => {
-        return 'Bem vindo ao Backend do Blog'
+        return 'Bem vindo ao Backend API do Blog'
     })
 
     /* Rotas Posts */
     fastify.register(postsRouter)
     fastify.register(usersRouter)
+    fastify.register(newsRouter)
+    fastify.register(contatoRouter)
 
     /* Ligando o servidor */
     await fastify.listen({ port: 5000 })

@@ -1,6 +1,6 @@
 $lg: 1080px;
 $md: 865px;
-$sm: 650px;
+$sm: 775px;
 
 .nav__topo {
     position: relative;
@@ -8,6 +8,8 @@ $sm: 650px;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
+
+
 
     .lista__topo {
         display: flex;
@@ -48,6 +50,15 @@ $sm: 650px;
             &:active {
                 border-bottom: var(--borda_active);
             }
+        }
+    }
+
+    .admin__reg {
+        background: var(--destaque) !important;
+        padding: 0 5%;
+
+        .item__lista__topo {
+            font-weight: 700;
         }
     }
 }

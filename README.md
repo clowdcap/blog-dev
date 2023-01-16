@@ -8,16 +8,17 @@ Front End
             X About
             X Tecnologias
             X Projetos Git
-            - Fotos
+            - Fotos <-- REVER 
         X Contato
         X Login / Register
-        - Atualizar Header
+        X Atualizar Header
     
     - Arrumar:
-        - Menu Mobile
         - Links Rodape
         - Sincronizar Api Newsletter
         - Sincronizar Api Contato
+        - Menu Mobile
+        - Arrumar scss do newsletter (alerta de sucesso ou fracasso)
         
         Diversos:
             - Foto capa do blog e dos post unico alinhado com all posts
@@ -56,3 +57,27 @@ Back End
 DB
     - Criar Posts e Usuarios Completos
     - Melhorar os dados ja existentes
+
+
+Jose
+
+Desenvolvedor Web
+e Busco primeira como DEV
+
+Front End
+
+React Js
+Next Js
+Axios API
+SCSS - Tailwind
+
+Back End
+
+Node Js
+Prisma
+Fastify
+Zod
+
+DB
+MySQL
+MongoDB

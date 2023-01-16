@@ -132,7 +132,7 @@ const Register = () => {
                     <button 
                         type='submit' 
                         className='button_admin'
-                        disabled={email === '' || password.length < 3 || username < 3 }
+                        disabled={email === '' || password.length < 3 || username.length < 3 }
                         >Register</button>
                 </form>
             </div>

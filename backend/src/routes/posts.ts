@@ -20,7 +20,7 @@ export async function postsRouter(fastify: FastifyInstance) {
         
     })
 
-    /* Cria o Post */ // OK
+    /* Cria Post */ // OK
     await fastify.post('/posts/create', async (request, reply) => {
         
         const createNewsBody = z.object({

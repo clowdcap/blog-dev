@@ -36,3 +36,16 @@ model User {
   descricao String   @default("Texto")
   createdAt DateTime @default(now())
 }
+
+model Newsletter {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Contact {
+  id        String @id @default(cuid())
+  name      String @default("Nome")
+  email     String @unique
+  descricao String
+}
