@@ -32,3 +32,6 @@ Back End
 DB
     - Criar Posts e Usuarios Completos
     - Melhorar os dados ja existentes
+    
+Preview do Blog
+![image](https://user-images.githubusercontent.com/68341332/214194153-ee3d4f47-ca3b-4de2-b6fc-34e60d5cd60f.png)
