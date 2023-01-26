@@ -27,7 +27,7 @@ const Navegacao = () => {
                 {user ? 
                 
                     <ul className="lista__topo admin__reg">    
-                        <NavLink to="/write" className='link__lista__topo'>
+                        <NavLink to="/posts/create" className='link__lista__topo'>
                             <li className="item__lista__topo">Write</li>
                         </NavLink >
 

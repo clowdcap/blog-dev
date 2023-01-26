@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, { useState, useRef } from 'react'
 import './../admin.scss'
 
+import './../admin.scss'
+
 const Register = () => {
 
     const formulario = useRef(null)

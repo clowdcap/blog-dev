@@ -7,6 +7,8 @@ import Sobre from './pages/sobre/Sobre'
 import PostPage from './pages/post/PostPage'
 import Login from './pages/admin/login/Login'
 import Register from './pages/admin/register/Register'
+import CreatePost from './pages/post/manager/CreatePost'
+
 
 import { Route, Routes } from 'react-router-dom'
 
@@ -25,6 +27,8 @@ function App() {
 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+
+          <Route path="/posts/create" element={<CreatePost />} />
 
           <Route path="/posts/read/:id" element={<PostPage />} />
 

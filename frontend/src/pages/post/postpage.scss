@@ -29,7 +29,6 @@ section.post__page {
             img {
                 width: 100%;
             }
-       
         }
 
         .hr {
@@ -51,7 +50,6 @@ section.post__page {
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between !important;
-
             }
 
             .corpo__post {
@@ -74,7 +72,6 @@ section.post__page {
                         cursor: pointer;
                     }
                 }
-
             }
 
             .container__userProfile {
@@ -83,7 +80,6 @@ section.post__page {
             }
 
             .outhers__posts {
-
                 max-width: $body;
                 width: 100%;
                 
@@ -105,7 +101,6 @@ section.post__page {
                 gap: 0 2%;
             }
         }
-
     }
 }
 

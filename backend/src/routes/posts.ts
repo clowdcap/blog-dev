@@ -36,7 +36,7 @@ export async function postsRouter(fastify: FastifyInstance) {
         await prisma.post.create({
             data: input
         })
-      
+        
         return reply.status(201).send("Post Criado com sucesso!")
 
     })

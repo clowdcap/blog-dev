@@ -1,0 +1,120 @@
+section.write {
+    width: 100%;
+    margin: 3rem 0;
+
+    .container__write {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        .title__write {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: var(--f_capa);
+                color: var(--texto);
+                font-weight: 700;
+            }
+            
+            h3 {
+                color: var(--texto);
+                font-size: var(--f_titulo);
+            }
+        }
+
+        .form__write {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5rem;
+            width: 100%;
+        
+
+            .col1__form__write {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+
+                p {
+                    font-size: var(--texto);
+                    margin: 1rem 0 .5rem 0;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 3%;
+                    border: none;
+                    outline: var(--borda);
+                    border-radius: var(--borda_rounded);
+                    font-size: var(--texto);
+                
+                    &:hover {
+                        outline: 1px solid var(--destaque);
+                    }
+                    &:active {
+                        outline: 3px solid var(--destaque);
+                    }
+                }
+
+            }
+
+            .col2__form__write {
+                flex: 3;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-size: var(--texto);
+                    margin: 1rem 0 .5rem 0;
+                }
+
+
+                textarea{
+                    width: 100%;
+                    min-height: 250px;
+                    padding: 2%;
+                    border: none;
+                    outline: var(--borda);
+                    border-radius: var(--borda_rounded);
+                    font-size: var(--texto);
+                    
+                    &:hover {
+                        outline: 1px solid var(--destaque);
+                    }
+                    &:active {
+                        outline: 3px solid var(--destaque);
+                    }
+                }
+                
+                button {
+                    width: 20%;
+                    padding: 1%;
+                    margin-top: 2rem;
+                    border: none;
+                    outline: var(--borda);
+                    border-radius: var(--borda_rounded);
+                    font-size: var(--f_btn);
+                    background: var(--btn);
+                    color: var(--texto_btn);
+
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+

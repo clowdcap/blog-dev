@@ -7,8 +7,8 @@ import './../admin.scss'
 
 const Login = () => {
     const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')  
-    const [error, setError] = useState(null)  
+    const [password, setPassword] = useState('')
+    const [error, setError] = useState(null)
     const [isRequesting, setIsRequesting] = useState(false)
 
     const handleEmail = (event) => {
@@ -27,14 +27,14 @@ const Login = () => {
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault() 
+        event.preventDefault()
 
         setError(null)
         setIsRequesting(true)
 
-        let values = { 
-            email: email, 
-            password: password 
+        let values = {
+            email: email,
+            password: password
         }
 
         login(values)
@@ -56,31 +56,31 @@ const Login = () => {
                 <form>
 
                     <p>{
-                        error ? 
-                        error.message : 
+                        error ?
+                        error.message :
                         null}</p>
 
-                    <input 
-                        type="email" 
-                        name="usuario" 
+                    <input
+                        type="email"
+                        name="usuario"
                         autoComplete='off'
-                        id="usuario" 
-                        placeholder='Your e-mail' 
+                        id="usuario"
+                        placeholder='Your e-mail'
                         value={email}
                         onChange={handleEmail}
                         required />
                     
-                    <input 
-                        type="password" 
-                        name="password" 
-                        id="password" 
-                        placeholder='Your password' 
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder='Your password'
                         value={password}
                         onChange={handlePassword}
                         required />
                     
                     <div className="remember__box">
-                        <input 
+                        <input
                             type="checkbox" 
                             name="remember"
                             id="remember" />
