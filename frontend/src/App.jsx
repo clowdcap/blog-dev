@@ -9,13 +9,12 @@ import Login from './pages/admin/login/Login'
 import Register from './pages/admin/register/Register'
 import CreatePost from './pages/post/manager/CreatePost'
 
-
 import { Route, Routes } from 'react-router-dom'
 
 import './styles/App.scss'
 
-
 function App() {
+
   return (
     <div className="App">
       <Header />

@@ -84,7 +84,6 @@ const Login = () => {
                             type="checkbox" 
                             name="remember"
                             id="remember" />
-                        
                         <span>Remember me</span>
                     </div>
 

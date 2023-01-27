@@ -20,6 +20,8 @@ const PostPage = () => {
   const path = pack.pathname.split('/')
   const id = path[3]
   
+  const userbody = true
+
   const [post, setPost] = useState([])
   
   const fetchPost = async ()=> {
@@ -55,7 +57,7 @@ const PostPage = () => {
               data="Jan 10, 2020"
               time_read="4 min read"
             />
-            <Share />
+            {userbody? <Share />: null}
           </div>
           <div className="corpo__post">
             <Postagem conteudo={post.conteudo}/>
