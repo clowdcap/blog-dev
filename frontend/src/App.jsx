@@ -1,7 +1,8 @@
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 
-import Home from './pages/home/Home'
+import Home from './pages/Home/Home'
+import Blog from './pages/blog/Blog'
 import Contato from './pages/contato/Contato'
 import Sobre from './pages/sobre/Sobre'
 import PostPage from './pages/post/PostPage'
@@ -23,14 +24,14 @@ function App() {
           
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
-
+          
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-
+          
+          <Route path='/blog' element={<Blog />} />
           <Route path="/posts/create" element={<CreatePost />} />
-
           <Route path="/posts/read/:id" element={<PostPage />} />
-
+          
           <Route path="*" element={<Home />} />
         </Routes>
       <Footer />

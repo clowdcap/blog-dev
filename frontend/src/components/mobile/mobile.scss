@@ -1,26 +1,4 @@
 $lg: 1080px;
 $md: 865px;
-$sm: 775px;
+$sm: 920px;
 
-.mobile {
-    display: none;
-    font-size: var(--f_btn_mobile);
-    cursor: pointer;
-
-    &:hover {
-        color: var(--destaque_hover);
-    }
-    &:active {
-        color: var(--destaque);
-    }
-}
-
-
-
-@media screen and (max-width: $sm) {
-    .mobile {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-    }
-}

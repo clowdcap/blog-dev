@@ -1,14 +1,18 @@
 import React from 'react'
-import ArtigosHome from '../../components/artigos/ArtigosHome'
-import Destaque from '../../components/destaque/Destaque'
+
+// COMPONENTS
+import { Slider } from '../../components/slider/Slider'
+import { Jose } from '../../components/jose/Jose'
+import Tecnologias from '../../components/tecnologias/Tecnologias'
 
 const Home = () => {
-  return (
-    <>
-        <Destaque />
-        <ArtigosHome />
-    </>
-  )
+    return (
+        <>
+            <Slider />
+            <Jose />
+            <Tecnologias />
+        </>
+    )
 }
 
 export default Home

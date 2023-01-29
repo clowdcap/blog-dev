@@ -1,0 +1,61 @@
+$header: 45px;
+
+.slider {
+    width: 100%;
+    margin: 0px 0px 40px 0;
+
+    .container__slider {
+        height: calc(100vh - $header);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    
+            .images__slider {
+                width: 100%;
+                height: calc(100vh - $header);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .btns__slider {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin: 0rem 0rem;
+                padding: 2rem;
+                justify-content: space-between;
+                position: absolute;
+
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                .btn__slider {
+                    
+                    button {
+                        width: 100px;
+                        height: 100px;
+                        background: transparent;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.5s ease;
+
+                        svg {
+                            font-size: 80px;
+                        }
+                    }
+                }
+
+            }
+    
+    }
+}
