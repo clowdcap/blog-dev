@@ -7,14 +7,14 @@ const CreatePost = () => {
 
     const formulario = useRef(null)
     
-    const defaultCapa = 'https://th.bing.com/th/id/R.03bf396dbabe50572e780495662ac3d9?rik=8JmEFpQz1BQ6qQ&riu=http%3a%2f%2fwallpaperheart.com%2fwp-content%2fuploads%2f2018%2f04%2flovable-wallpapers-for-desktop-hd-nature-pc-hd-wallpapers.jpg&ehk=MZadUbae4WxrPnjg10Te86MkBjFfyZbiSRlkYe9dT68%3d&risl=&pid=ImgRaw&r=0'
+    // const defaultCapa = 'https://th.bing.com/th/id/R.03bf396dbabe50572e780495662ac3d9?rik=8JmEFpQz1BQ6qQ&riu=http%3a%2f%2fwallpaperheart.com%2fwp-content%2fuploads%2f2018%2f04%2flovable-wallpapers-for-desktop-hd-nature-pc-hd-wallpapers.jpg&ehk=MZadUbae4WxrPnjg10Te86MkBjFfyZbiSRlkYe9dT68%3d&risl=&pid=ImgRaw&r=0'
 
     const [error, setError] = useState(null)
 
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
-    const [imageFile, setImageFile] = useState(defaultCapa)
-    const [autor, setAutor] = useState('Jose')
+    const [imageFile, setImageFile] = useState('')
+    const [autor, setAutor] = useState('')
     const [content, setContent] = useState('')
 
     const handleTitle = (event) => {

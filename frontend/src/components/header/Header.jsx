@@ -4,8 +4,7 @@ import './header.scss'
 
 
 import LogoTopo from '../logo/LogoTopo'
-import Mobile from '../mobile/Mobile'
-import Navegacao from '../navegacao/Navegacao'
+
 import { NavegacaoMobile } from '../navegacao/NavegacaoMobile'
 import { NavLink } from 'react-router-dom'
 
@@ -20,7 +19,7 @@ const Header = () => {
     setShowMenu(!showMenu)      
   }
 
-  const user = true
+  const user = false
 
   return (
     <header className="topo">

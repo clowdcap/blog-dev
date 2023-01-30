@@ -1,7 +1,7 @@
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 
-import Home from './pages/Home/Home'
+import Home from './pages/home/Home'
 import Blog from './pages/blog/Blog'
 import Contato from './pages/contato/Contato'
 import Sobre from './pages/sobre/Sobre'
